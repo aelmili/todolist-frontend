@@ -5,12 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
+import { HeaderComponent } from './header/header.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    AuthComponent
+    HeaderComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +21,6 @@ import { AuthComponent } from './auth/auth.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AuthComponent, HeaderComponent, TasksComponent]
 })
 export class AppModule { }

@@ -1,0 +1,9 @@
+.login-form button{
+	width: 100%;
+	text-align: center;
+	border-radius: 0;
+}
+
+.login-form input{
+	border-radius: 0;
+}
